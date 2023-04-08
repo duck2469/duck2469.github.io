@@ -91,6 +91,6 @@ body {
 /* a:hover only is used when well, hovering */
 
 .navbar a:hover {
-    color: rgb(255, 255, 255); /* Color is text color */
+    color: rgba(255, 255, 255, 0.747); /* Color is text color */
     text-decoration: underline; /* Text decoration is underlines, etc */
 }
