@@ -59,11 +59,10 @@ body {
 
 /* things with . affect classes, but if you add a space, that allows you to customise the childs of a class/element only. */
 
-.rightmodlogo {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    color: brown;
+.modlogo {
+    width: 50%;
+    margin: auto;
+    display: block;
 }
 
 .navbar a {
