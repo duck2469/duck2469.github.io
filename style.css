@@ -28,6 +28,20 @@ body {
     text-align: center;
 }
 
+.YTVideo {
+    width: 420px; /* Width of the element */
+     /* Padding but on the right of the element */
+    height: 345px;
+    border: black;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-width: 3px;
+    border-radius: 3px;
+    padding: 5px;
+    background: rgb(156 156 156 / 49%);
+}
+
 
 .modslist {
     display: flex; /* flex stuff, confusing */
