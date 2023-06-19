@@ -88,7 +88,7 @@ body {
 
 .mod img {
     width: 180px; /* Width of the element */
-    margin-left: 0px; /* Margin Left, is the margin for the left side of the content */
+    margin-left: 10px; /* Margin Left, is the margin for the left side of the content */
     height: 180px;
     border: black;
     border-style: solid;
@@ -115,14 +115,4 @@ body {
 .navbar a:hover {
     color: rgba(255, 255, 255, 0.747); /* Color is text color */
     text-decoration: underline; /* Text decoration is underlines, etc */
-}
-
-a {
-    color: rgb(19, 83, 157);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(47, 105, 172);
-    text-decoration: underline;
 }
