@@ -126,3 +126,15 @@ a:hover {
     color: rgb(47, 105, 172);
     text-decoration: underline;
 }
+
+.sociallinks {
+    display: table;
+    margin: auto;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 3px;
+}
