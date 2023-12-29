@@ -147,7 +147,7 @@ a:hover {
 
 /* Add a card effect for articles */
 .card {
-   background-color: white;
+   background-color: #ff9999;
    padding: 20px;
    margin-top: 20px;
 }
@@ -157,6 +157,7 @@ a:hover {
   content: "";
   display: table;
   clear: both;
+  text-align: center;
 }
 
 /* Footer */
