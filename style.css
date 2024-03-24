@@ -12,6 +12,9 @@ html, body {
 
 body {
     background-color: rgb(247 166 166);  /* Background-Color sets the background color of an element */
+     /* Linear Gradient */
+     background: linear-gradient(to right, #ff4e4e, #feb47b);
+     height: 100vh;
 }
 
 /* things with . affect classes. they affect html tags that have class="" inside of them, like this: <body class="namehere"> */
