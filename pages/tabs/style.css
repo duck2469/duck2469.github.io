@@ -78,7 +78,7 @@ body {
     width: 100%; /* width: 100% makes this fill the screen */
     background-color: rgb(137, 3, 3);  /* Background-Color sets the background color of an element */
     background: linear-gradient(rgb(191 1 1),rgb(113 8 8)); /* Background can also set the background color of an element, but can do way more. I use it here for just in case browser don't support linear-gradient */
-    padding: 10px; /* Padding is the area inside of the box that is padded */
+    /* padding: 10px; /* Padding is the area inside of the box that is padded */
     box-shadow: 0 0 15px 0 rgb(0 0 0); /* box-shadow makes a drop shadow. confusing */
     display: table-cell; /* Changes the way how elemnts are organised */
 }
@@ -86,9 +86,11 @@ body {
 /* things with . affect classes, but if you add a space, that allows you to customise the childs of a class/element only. */
 
 .navbar a {
+    padding: 10px;
     color: rgb(255, 255, 255); /* Color is text color */
     text-decoration: none; /* Text decoration is underlines, etc */
 }
+
 
 .mod img {
     width: 180px; /* Width of the element */
