@@ -32,6 +32,18 @@ body {
     text-align: center;
 }
 
+.BackGroundA {
+    margin: 8px; /* Margin is the area outside of the box that is padded */
+    margin-top: 50px;
+    color: rgb(0 0 0); /* Color is text color */
+    text-align: center;
+    border: black;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    background: rgb(156 156 156 / 49%);
+}
+
 .YTVideo {
     width: 420px; /* Width of the element */
      /* Padding but on the right of the element */
@@ -132,7 +144,6 @@ a:hover {
 }
 
 .sociallinks {
-    display: table;
     margin: auto;
 }
 
@@ -141,4 +152,11 @@ a:hover {
     height: 40px;
     border-radius: 100%;
     padding: 3px;
+    border: black;
+    border-style: solid;
+}
+.sociallinks img:hover {
+    /* Define styles for when hovering over the image */
+    border-color: #c9c9c9; /* Change border color */
+    box-shadow: 0 0 5px rgb(255 255 255); /* Add shadow effect */
 }
