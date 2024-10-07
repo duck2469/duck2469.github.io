@@ -44,6 +44,7 @@ body {
     padding: 5px;
     background: rgb(156 156 156 / 49%);
     text-align: center;
+    margin: auto;
 }
 
 
@@ -54,7 +55,9 @@ body {
     align-content: flex-start;
     justify-content: flex-start;
     align-items: center;
-    padding: 8px; 
+    padding: 8px;
+    width: 70%;
+    margin: auto;
 }
 
 .mod {
