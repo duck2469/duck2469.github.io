@@ -88,6 +88,9 @@ body {
 }
   
 .navbar a {
+    padding-top: 5.1px;
+    padding-bottom: 5.1px;
+    display: inline-table;
     padding: 8.20px;
     color: rgb(255, 255, 255); /* Color is text color */
     text-decoration: none; /* Text decoration is underlines, etc */
@@ -106,7 +109,6 @@ body {
     width: 190px;
     text-align: center;
     text-overflow: ellipsis;
-    margin: 0px;
 }
 
 .mod p a {
