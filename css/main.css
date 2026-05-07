@@ -1,0 +1,206 @@
+/* * is a special css element that effects everything */
+
+* {
+    font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif; /* This sets the font family. Since it is inside a *, it does it for every element */
+}
+
+/* things without . do not affect classes, they affect html tags such as <html>, <body> */
+
+html, body {
+    margin: 0px; /* Margin is the area outside of the box that is padded */
+}
+
+body {
+    background-color: rgb(247 166 166);  /* Background-Color sets the background color of an element */
+     /* Linear Gradient */
+     background: linear-gradient(to top, #ff4e4e, #feb47b);
+     height: 100vh;
+}
+
+/* things with . affect classes. they affect html tags that have class="" inside of them, like this: <body class="namehere"> */
+
+.content {
+    margin: 8px; /* Margin is the area outside of the box that is padded */
+    margin-top: 50px;
+}
+
+.contentAboutme {
+    margin: 8px; /* Margin is the area outside of the box that is padded */
+    margin-top: 50px;
+    color: rgb(0 0 0); /* Color is text color */
+    text-align: center;
+}
+
+.YTVideo {
+    width: 420px; /* Width of the element */
+     /* Padding but on the right of the element */
+    height: 345px;
+    border: black;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-width: 3px;
+    border-radius: 3px;
+    padding: 5px;
+    background: rgb(156 156 156 / 49%);
+    text-align: center;
+    margin: auto;
+}
+
+.modslist {
+    display: flex; /* flex stuff, confusing */
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    width: 70%;
+    margin: auto;
+}
+
+@keyframes TopBar_Startup {
+  0%   {left:0px; top:0px; width: 100px;}
+  25%  {left:200px; top:0px;; width: 150px;}
+}
+
+@keyframes Box_Startup {
+  0%   {left:0px; top:0px; width: 200px;}
+  25%  {left:0px; top:0px; width: 720px; margin: 50px auto 8px auto;}
+}
+
+.topbar {
+    margin: 8px; /* Margin is the area outside of the box that is padded */
+    margin-top: 30px;
+    color: rgb(0 0 0); /* Color is text color */
+    text-align: center;
+    border: black;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 2px;
+    background: rgba(65, 65, 65, 0);
+    border: rgba(255, 255, 255, 0.605);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+}
+
+.topbar a {
+    width: 150px; /* Width of the element */
+    height: 25px;
+    color: rgb(255, 255, 255);
+    border: rgba(255, 255, 255, 0.605);
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-width: 3px;
+    border-radius: 3px;
+    padding: 5px;
+    background: rgba(65, 65, 65, 0.49);
+    display: list-item;
+    text-align: center;
+    font-size: 1.3em;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: TopBar_Startup;
+    animation-duration: 3s;
+    list-style-type: none;
+}
+
+.topbar a:hover {
+    color: rgb(243, 238, 83);
+    text-decoration: underline;
+}
+
+.boxinfo {
+    font-size: 0.9em;
+    margin: 50px auto 8px auto;
+    margin-top: 50px;
+    color: rgb(0 0 0); /* Color is text color */
+    border: 2px black;
+    border-style: solid;
+    border-radius: 2px;
+    width: 720px;
+    background: rgb(156 156 156 / 49%);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: Box_Startup;
+    animation-duration: 3s;
+    justify-content: center; /* Centers horizontally */
+    text-align: center;
+}
+
+.boxinfo a {
+    font-size: 1em;
+    padding: 2px; /* Space inside the box */
+    box-sizing: border-box; /* Padding won't change box width */
+    animation-fill-mode: forwards;
+    animation-name: Box_Startup;
+    animation-duration: 1s;
+    justify-content: center; /* Centers horizontally */
+    white-space: nowrap;
+}
+
+.navbar {
+    position: fixed; /* position: fixed makes this always on screen */
+    height: 30px; /* height sets the height */
+    top: 0; /* top sets the top position */
+    width: 100%; /* width: 100% makes this fill the screen */
+    background-color: rgb(137, 3, 3);  /* Background-Color sets the background color of an element */
+    background: linear-gradient(rgb(191 1 1),rgb(113 8 8)); /* Background can also set the background color of an element, but can do way more. I use it here for just in case browser don't support linear-gradient */
+    padding: 0px; /* Padding is the area inside of the box that is padded */
+    box-shadow: 0 0 15px 0 rgb(0 0 0); /* box-shadow makes a drop shadow. confusing */
+    text-align: center;
+    display: table-cell;
+}
+
+.navbar a {
+    padding-top: 5.1px;
+    padding-bottom: 5.1px;
+    display: inline-table;
+    padding: 8.20px;
+    color: rgb(255, 255, 255); /* Color is text color */
+    text-decoration: none; /* Text decoration is underlines, etc */
+}
+
+.mod img {
+    width: 180px; /* Width of the element */
+    margin-left: 0px; /* Margin Left, is the margin for the left side of the content */
+    height: 180px;
+    border: black;
+    border-style: solid;
+}
+
+.mod p {
+    height: 45px;
+    width: 190px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.mod p a {
+    margin-left: 0px !important;
+}
+
+.modslist a {
+    margin-left: 20px;
+}
+
+/* a:hover only is used when well, hovering */
+
+.navbar a:hover {
+    color: rgba(255, 255, 255, 0.747); /* Color is text color */
+    text-decoration: underline; /* Text decoration is underlines, etc */
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(83, 94, 243);
+    text-decoration: underline;
+}

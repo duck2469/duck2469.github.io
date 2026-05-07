@@ -1,0 +1,19 @@
+/* * is a special css element that effects everything */
+
+.sociallinks {
+    margin: auto;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding: 0px;
+    border: black;
+    border-style: solid;
+}
+.sociallinks img:hover {
+    /* Define styles for when hovering over the image */
+    border-color: #c9c9c9; /* Change border color */
+    box-shadow: 0 0 5px rgb(255 255 255); /* Add shadow effect */
+}
