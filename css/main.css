@@ -14,7 +14,7 @@ body {
     background-color: rgb(247 166 166);  /* Background-Color sets the background color of an element */
      /* Linear Gradient */
      background: linear-gradient(to top, #ff4e4e, #feb47b);
-     height: 100vh;
+     min-height: 100dvh;
 }
 
 /* things with . affect classes. they affect html tags that have class="" inside of them, like this: <body class="namehere"> */
@@ -61,7 +61,7 @@ body {
 
 @keyframes TopBar_Startup {
   0%   {left:0px; top:0px; width: 100px;}
-  25%  {left:200px; top:0px;; width: 150px;}
+  25%  {left:200px; top:0px; width: min(150px, 92vw);}
 }
 
 @keyframes Box_Startup {
@@ -82,10 +82,11 @@ body {
     border: rgba(255, 255, 255, 0.605);
     display: flex;
     justify-content: center; /* Centers horizontally */
+    white-space: nowrap;
 }
 
 .topbar a {
-    width: 150px; /* Width of the element */
+    width: min(150px, 92vw);
     height: 25px;
     color: rgb(255, 255, 255);
     border: rgba(255, 255, 255, 0.605);
@@ -98,7 +99,7 @@ body {
     background: rgba(65, 65, 65, 0.49);
     display: list-item;
     text-align: center;
-    font-size: 1.3em;
+    font-size: clamp(1rem, 5vw, 1.5rem);
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-name: TopBar_Startup;
@@ -129,7 +130,8 @@ body {
     animation-name: Box_Startup;
     animation-duration: 3s;
     justify-content: center; /* Centers horizontally */
-    text-align: center;
+    text-align: left;
+    padding: 10px 20px 30px;
 }
 
 .boxinfo a {
@@ -139,30 +141,7 @@ body {
     animation-fill-mode: forwards;
     animation-name: Box_Startup;
     animation-duration: 1s;
-    justify-content: center; /* Centers horizontally */
     white-space: nowrap;
-}
-
-.navbar {
-    position: fixed; /* position: fixed makes this always on screen */
-    height: 30px; /* height sets the height */
-    top: 0; /* top sets the top position */
-    width: 100%; /* width: 100% makes this fill the screen */
-    background-color: rgb(137, 3, 3);  /* Background-Color sets the background color of an element */
-    background: linear-gradient(rgb(191 1 1),rgb(113 8 8)); /* Background can also set the background color of an element, but can do way more. I use it here for just in case browser don't support linear-gradient */
-    padding: 0px; /* Padding is the area inside of the box that is padded */
-    box-shadow: 0 0 15px 0 rgb(0 0 0); /* box-shadow makes a drop shadow. confusing */
-    text-align: center;
-    display: table-cell;
-}
-
-.navbar a {
-    padding-top: 5.1px;
-    padding-bottom: 5.1px;
-    display: inline-table;
-    padding: 8.20px;
-    color: rgb(255, 255, 255); /* Color is text color */
-    text-decoration: none; /* Text decoration is underlines, etc */
 }
 
 .mod img {
@@ -188,13 +167,6 @@ body {
     margin-left: 20px;
 }
 
-/* a:hover only is used when well, hovering */
-
-.navbar a:hover {
-    color: rgba(255, 255, 255, 0.747); /* Color is text color */
-    text-decoration: underline; /* Text decoration is underlines, etc */
-}
-
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -203,4 +175,11 @@ a {
 a:hover {
     color: rgb(83, 94, 243);
     text-decoration: underline;
+}
+
+table, th, td {
+  border: 2px solid;
+  color: rgb(0, 0, 0);
+  padding: 0px 2px 0px;
+  border-collapse: collapse;
 }
