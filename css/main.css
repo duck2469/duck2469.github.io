@@ -11,9 +11,10 @@ html, body {
 }
 
 body {
-    background-color: rgb(247 166 166);  /* Background-Color sets the background color of an element */
+    /*background-color: rgb(247 166 166);  /* Background-Color sets the background color of an element */
      /* Linear Gradient */
-     background: linear-gradient(to top, #ff4e4e, #feb47b);
+     background-image: url("../img/background_website.png");
+     /*background: linear-gradient(to top, #ff4e4e, #feb47b); */
      min-height: 100dvh;
 }
 
@@ -118,10 +119,10 @@ body {
     margin-top: 50px;
     color: rgb(0 0 0); /* Color is text color */
     border: 2px black;
-    border-style: solid;
+    /*border-style: solid;*/
     border-radius: 2px;
     width: min(720px, 92vw); /* ← fits any screen */
-    background: rgb(156 156 156 / 49%);
+    /*background: rgb(156 156 156 / 49%);*/
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
