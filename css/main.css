@@ -16,6 +16,8 @@ body {
      background-image: url("../img/background_website.png");
      /*background: linear-gradient(to top, #ff4e4e, #feb47b); */
      min-height: 100dvh;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
 }
 
 /* things with . affect classes. they affect html tags that have class="" inside of them, like this: <body class="namehere"> */
