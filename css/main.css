@@ -15,9 +15,7 @@ body {
      /* Linear Gradient */
      background-image: url("../img/background_website.png");
      /*background: linear-gradient(to top, #ff4e4e, #feb47b); */
-     min-height: 100dvh;
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
+
 }
 
 /* things with . affect classes. they affect html tags that have class="" inside of them, like this: <body class="namehere"> */
@@ -64,7 +62,7 @@ body {
 
 @keyframes TopBar_Startup {
   0%   {left:0px; top:0px; width: 100px;}
-  25%  {left:200px; top:0px; width: min(150px, 92vw);}
+  25%  {left:200px; top:0px; width: min(111px, 92vw);}
 }
 
 @keyframes Box_Startup {
@@ -89,7 +87,7 @@ body {
 }
 
 .topbar a {
-    width: min(150px, 92vw);
+    width: min(111px, 92vw);
     height: 25px;
     color: rgb(255, 255, 255);
     border: rgba(255, 255, 255, 0.605);
@@ -97,7 +95,7 @@ body {
     margin-top: 10px;
     margin-left: 10px;
     border-width: 3px;
-    border-radius: 3px;
+    border-radius: 4px;
     padding: 5px;
     background: rgba(65, 65, 65, 0.49);
     display: list-item;
