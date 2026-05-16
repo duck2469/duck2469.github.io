@@ -17,3 +17,12 @@
     border-color: #c9c9c9; /* Change border color */
     box-shadow: 0 0 5px rgb(255 255 255); /* Add shadow effect */
 }
+
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+
+ol.d {list-style-type: upper-roman;}
+ol.e {list-style-type: lower-roman;}
+ol.f {list-style-type: lower-alpha;}
+ol.g {list-style-type: decimal;}
