@@ -1,0 +1,5 @@
+img {
+  width: 100%;       /* Takes up the full width of the parent container */
+  height: 400px;     /* Sets a specific height */
+  object-fit: fill; /* Crops and fits the image perfectly without distortion */
+}
