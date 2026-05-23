@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pato's Website - Mods</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Pato">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="apple-touch-icon" href="../../img/glasses.png" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/7.css" />
+</head>
+
+<body>
+    <div class="topbar">
+        <a href="../../index.html">Home</a>
+        <a href="../../aboutme/aboutme.html">About me</a>
+        <a href="../creations.html">Creations</a>
+        <a href="../../blog/mainblog.html">Blog</a>
+        <a href="../../extra/extra.html">Extra</a>
+    </div>
+    <div class="boxinfo">
+        <div class="window glass active" style="max-width: 100%; --w7-w-bg: #805ba500;">
+            <div class="title-bar">
+                <div class="title-bar-text">Pato's Website</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body has-space">
+                <h1>My Mods</h1>
+                <div>
+                    <p>Choose a mod from the dropdown menu</p>
+                    <select onmousedown="pulllisting.play()" name="listingmods" id="" size=""
+                        onchange="window.location.href=this.value;">
+                        <option value="index.html" selected="selected">None</option>
+                        <option value="page/mk8mods.html">Mario Kart 8</option>
+                        <option value="page/mp9mods.html">Mario Party 9</option>
+                        <option value="page/mario3dland.html">Super Mario 3D Land</option>
+                        <option value="page/brawlmods.html">Super Smash Bros. Brawl</option>
+
+                        <script>
+                            var pulllisting = new Audio();
+                            pulllisting.src = "https://github.com/duck2469/duck2469.github.io/raw/refs/heads/main/sounds/PullListing.wav";
+                        </script>
+                        <select>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="boxinfo" style="color: rgb(144, 144, 144); text-align: center;">
+            <b>@2022-2026.<a href="https://khang-nd.github.io/7.css/#menu target=" target="_blank title=" This site is
+                    using 7.css, created by Khang" alt=""></p>7.css</p>
+        </div>
+</body>
+
+</html>
