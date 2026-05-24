@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-title" content="Pato">
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="apple-touch-icon" href="img/glasses.png" />
+    <link rel="apple-touch-icon" href="css/img/glasses.png" />
     <link rel="icon" type="image/x-icon" href="css/default.ico" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" href="https://unpkg.com/7.css" />
@@ -30,9 +30,28 @@
                 </div>
             </div>
             <div class="window-body has-space">
-                <h1>404 - Page not found <img src="css/smallpato.png" style="width:30px;height:30px;"></a></h1>
+                <h1>404 - Page not found <img src="css/img/smallpato.png" style="width:30px;height:30px;"></a></h1>
                 <p>Just letting you know, this website is still in W.I.P.</p>
-                <h2><img src="css/404/mikewhurt.gif" style="width:260px;height:260px;"></a></h2>
+                <script>
+                    // Source - https://stackoverflow.com/a/54603783
+                    // Posted by Nick Parsons, modified by community. See post 'Timeline' for change history
+                    // Retrieved 2026-05-24, License - CC BY-SA 4.0
+
+                    const images = [
+                        "css/404/mikewhurt.gif",
+                        "css/404/luigipr.png",
+                        "css/404/cody-eats-apple.webp",
+                        "css/404/BrawlMario.jpg",
+                        "css/404/smg-items.png",
+                        "css/404/wifigaming.png"
+                    ];
+
+                    document.addEventListener('DOMContentLoaded', _ => {
+                        const randImageIndex = ~~(Math.random() * images.length);
+                        document.getElementById('randImg').src = images[randImageIndex];
+                    });
+                </script>
+                <h2><img id="randImg" src="" style="width:260px;height:260px;"></a></h2>
             </div>
         </div>
     </div>
