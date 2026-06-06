@@ -48,22 +48,6 @@ body {
     margin: auto;
 }
 
-.modslist {
-    display: flex; /* flex stuff, confusing */
-    flex-direction: row; 
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 8px;
-    width: 70%;
-    margin: auto;
-}
-
-.modslist a {
-    margin-left: 20px;
-}
-
 @keyframes TopBar_Startup {
   0%   {left:0px; top:0px; width: 100px;}
   25%  {top:0px; width: min(111px, calc((82vw - 32px) / 3))}
@@ -106,7 +90,7 @@ body {
     font-size: clamp(1.1rem, 2vw, 1.4rem);
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-name: TopBar_Startup;
+    
     animation-duration: 3s;
     list-style-type: none;
 }
@@ -147,27 +131,6 @@ body {
     animation-duration: 1s;
     white-space: nowrap;
 }
-
-.mod img {
-    width: 180px; /* Width of the element */
-    margin-left: 0px; /* Margin Left, is the margin for the left side of the content */
-    height: 180px;
-    border: black;
-    border-style: solid;
-}
-
-.mod p {
-    height: 45px;
-    width: 190px;
-    text-align: center;
-    text-overflow: ellipsis;
-}
-
-.mod p a {
-    margin-left: 0px !important;
-}
-
-
 
 a {
     color: rgb(255, 255, 255);
